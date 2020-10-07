@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="339.0" prefWidth="542.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cc.eumc.easylogin.Controller">
+   <children>
+      <Label fx:id="content" layoutY="145.0" lineSpacing="3.0" prefHeight="40.0" prefWidth="542.0" style="-fx-alignment: center;" text="Content" textAlignment="CENTER" textFill="#979797" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d1d9e6" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect>
+      </Label>
+      <Label fx:id="title" layoutX="-1.0" layoutY="111.0" prefHeight="21.0" prefWidth="542.0" style="-fx-alignment: center;" text="Title" textAlignment="CENTER" textFill="#797979" AnchorPane.bottomAnchor="207.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="111.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-M" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d1d9e6" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect>
+      </Label>
+      <Button fx:id="cancelButton" layoutX="255.0" layoutY="212.0" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: #A3B1C6; -fx-shape: &quot;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z&quot;;" textFill="#707986">
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

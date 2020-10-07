@@ -1,0 +1,19 @@
+{
+  "title": "EasyLogin˚",
+  "instanceFolder": "instances",
+  "activeInstance": "",
+  "defaults": {
+    "javaPath": "",
+    "memory": {
+      "minimum": 512,
+      "maximum": 2048
+    },
+    "gameWindow": {
+      "width": 854,
+      "height": 480
+    }
+  },
+  "language": "en_US",
+  "downloadThreads": 4,
+  "checkLauncherUpdate": true
+}

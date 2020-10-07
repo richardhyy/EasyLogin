@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: cc.eumc.easylogin.EasyLogin
+Class-Path: cc.eumc.easylogin
+

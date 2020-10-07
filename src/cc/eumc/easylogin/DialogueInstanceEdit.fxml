@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="339.0" prefWidth="542.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cc.eumc.easylogin.Controller">
+   <children>
+      <Label fx:id="subtitle" layoutY="58.0" lineSpacing="3.0" prefHeight="25.0" prefWidth="542.0" style="-fx-alignment: center;" text="Subtitle" textAlignment="CENTER" textFill="#979797" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d1d9e6" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect>
+      </Label>
+      <Label fx:id="title" layoutX="-1.0" layoutY="31.0" prefHeight="21.0" prefWidth="542.0" style="-fx-alignment: center;" text="Title" textAlignment="CENTER" textFill="#797979" AnchorPane.bottomAnchor="287.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="31.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-M" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d1d9e6" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect>
+      </Label>
+      <Button fx:id="done" layoutX="402.0" layoutY="282.0" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="29.0" prefWidth="97.0" style="-fx-background-color: #E0E5EC;" text="Done" textFill="#707986">
+         <effect>
+            <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+               <input>
+                  <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="instanceEditScrollPane" hbarPolicy="NEVER" layoutX="43.0" layoutY="82.0" prefHeight="197.0" prefWidth="468.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+         <content>
+            <GridPane fx:id="instanceEditGridPane" prefHeight="427.5" prefWidth="459.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="399.0" minWidth="10.0" prefWidth="37.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="399.0" minWidth="10.0" prefWidth="331.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="97.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="forgeChangeButton" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #E0E5EC;" text="Change" textFill="#707986" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <effect>
+                        <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+                           <input>
+                              <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="minecraftChangeButton" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #E0E5EC;" text="Change" textFill="#707986" GridPane.columnIndex="2">
+                     <effect>
+                        <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+                           <input>
+                              <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+                     </font>
+                  </Button>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="294.0" text="Forge" textFill="#797979">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-M" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="forgeVersionLabel" prefHeight="17.0" prefWidth="294.0" text="Not Installed" textFill="#979797">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-R" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="294.0" text="Minecraft Version" textFill="#797979">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-M" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="minecraftVersionLabel" prefHeight="17.0" prefWidth="294.0" text="Not Selected" textFill="#979797">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-R" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </VBox>
+                  <Label fx:id="minecraftIcon" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #979797;" />
+                  <Label fx:id="forgeIcon" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #979797;" GridPane.rowIndex="2" />
+                  <Label fx:id="fabricIcon" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #979797;" GridPane.rowIndex="3" />
+                  <Label fx:id="liteloaderIcon" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #979797;" GridPane.rowIndex="4" />
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="294.0" text="Fabric" textFill="#797979">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-M" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fabricVersionLabel" prefHeight="17.0" prefWidth="294.0" text="Not Installed" textFill="#979797">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-R" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="294.0" text="LiteLoader" textFill="#797979">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-M" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="liteloaderVersionLabel" prefHeight="17.0" prefWidth="294.0" text="Not Installed" textFill="#979797">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-R" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="fabricChangeButton" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #E0E5EC;" text="Change" textFill="#707986" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <effect>
+                        <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+                           <input>
+                              <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="liteloaderChangeButton" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #E0E5EC;" text="Change" textFill="#707986" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <effect>
+                        <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+                           <input>
+                              <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="rmsIcon" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #979797;" GridPane.rowIndex="6" />
+                  <VBox layoutX="45.0" layoutY="146.0" prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="294.0" text="Remote Manager Server" textFill="#797979">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-M" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rmsURLLabel" prefHeight="17.0" prefWidth="294.0" text="Not Specified" textFill="#979797">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-R" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="rmsButton" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #E0E5EC;" text="Change" textFill="#707986" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <effect>
+                        <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+                           <input>
+                              <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="minecraftFolderButton" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #E0E5EC;" text="Folder" textFill="#707986" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <effect>
+                        <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+                           <input>
+                              <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="loginServerIcon" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #979797;" GridPane.rowIndex="5" />
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="294.0" text="Login Server" textFill="#797979">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-M" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="loginServerLabel" prefHeight="17.0" prefWidth="294.0" text="Not Specified" textFill="#979797">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-R" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="loginServerChangeButton" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #E0E5EC;" text="Change" textFill="#707986" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <effect>
+                        <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+                           <input>
+                              <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="windowIcon" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #979797;" GridPane.rowIndex="7" />
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="294.0" text="Window" textFill="#797979">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-M" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="windowLabel" prefHeight="17.0" prefWidth="294.0" text="Default" textFill="#979797">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-R" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="windowButton" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #E0E5EC;" text="Change" textFill="#707986" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <effect>
+                        <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+                           <input>
+                              <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="javaIcon" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #979797;" GridPane.rowIndex="1" />
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="294.0" text="Java Path" textFill="#797979">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-M" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="javaPathLabel" prefHeight="17.0" prefWidth="294.0" text="Default" textFill="#979797">
+                           <font>
+                              <Font name="Alibaba-PuHuiTi-R" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="javaButton" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #E0E5EC;" text="Change" textFill="#707986" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <effect>
+                        <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+                           <input>
+                              <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </content>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="7.0" />
+         </padding>
+      </ScrollPane>
+      <Button fx:id="deleteInstanceButton" layoutX="482.0" layoutY="35.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="17.0" style="-fx-shape: &quot;M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z&quot;; -fx-background-color: #A3B1C6;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

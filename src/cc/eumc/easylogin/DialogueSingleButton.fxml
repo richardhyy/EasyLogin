@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="339.0" prefWidth="542.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cc.eumc.easylogin.Controller">
+   <children>
+      <Label fx:id="content" layoutY="145.0" lineSpacing="3.0" prefHeight="40.0" prefWidth="542.0" style="-fx-alignment: center;" text="Content" textAlignment="CENTER" textFill="#979797" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d1d9e6" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect>
+      </Label>
+      <Label fx:id="title" layoutX="-1.0" layoutY="111.0" prefHeight="21.0" prefWidth="542.0" style="-fx-alignment: center;" text="Title" textAlignment="CENTER" textFill="#797979" AnchorPane.bottomAnchor="207.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="111.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-M" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d1d9e6" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect>
+      </Label>
+      <Button fx:id="button" layoutX="226.0" layoutY="213.0" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: #E0E5EC;" text="OK" textFill="#707986">
+         <effect>
+            <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+               <input>
+                  <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

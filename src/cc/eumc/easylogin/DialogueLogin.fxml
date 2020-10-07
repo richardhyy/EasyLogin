@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="339.0" prefWidth="542.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cc.eumc.easylogin.Controller">
+   <children>
+      <Label layoutX="2.0" layoutY="102.0" prefHeight="17.0" prefWidth="414.0" style="-fx-alignment: center;" text="Minecraft Account Login" textFill="#979797" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="2.0" layoutY="71.0" prefHeight="21.0" prefWidth="542.0" style="-fx-alignment: center;" text="Account" textAlignment="CENTER" textFill="#797979" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-M" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" layoutX="190.0" layoutY="142.0" prefColumnCount="14" prefHeight="27.0" prefWidth="176.0" promptText="E-Mail" style="-fx-background-color: #E0E5EC;">
+         <effect>
+            <InnerShadow color="#d1d9e580" height="7.0" offsetX="3.0" offsetY="3.0" radius="3.0" width="7.0">
+               <input>
+                  <InnerShadow color="#ffffff80" height="7.0" offsetX="-2.0" offsetY="-2.0" radius="3.0" width="7.0" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="190.0" layoutY="179.0" prefColumnCount="14" prefHeight="27.0" prefWidth="176.0" promptText="Password" style="-fx-background-color: #E0E5EC;">
+         <effect>
+            <InnerShadow color="#d1d9e580" height="7.0" offsetX="3.0" offsetY="3.0" radius="3.0" width="7.0">
+               <input>
+                  <InnerShadow color="#ffffff80" height="7.0" offsetX="-2.0" offsetY="-2.0" radius="3.0" width="7.0" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </PasswordField>
+      <Button fx:id="login" layoutX="273.0" layoutY="231.0" onAction="#login" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #E0E5EC;" text="Login" textFill="#707986">
+         <effect>
+            <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+               <input>
+                  <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancel" layoutX="191.0" layoutY="231.0" onMousePressed="#buttonPressedShallow" onMouseReleased="#buttonReleasedShallow" prefHeight="29.0" prefWidth="60.0" style="-fx-background-color: #E0E5EC;" text="Cancel" textFill="#6f7885b9">
+         <effect>
+            <DropShadow color="#a3b0c4b2" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+               <input>
+                  <DropShadow color="#ffffffb2" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

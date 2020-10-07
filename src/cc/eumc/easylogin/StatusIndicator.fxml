@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="97.0" style="-fx-background-color: transparent;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="47.0" minWidth="10.0" prefWidth="18.9400577545166" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="82.13157844543457" minWidth="10.0" prefWidth="75.0599422454834" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="statusName" prefHeight="17.0" prefWidth="72.0" text="StatusName" textFill="#979797" GridPane.columnIndex="1">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusIcon" prefHeight="14.0" prefWidth="14.0" style="-fx-background-color: #979797;">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets left="3.0" />
+   </padding>
+</GridPane>

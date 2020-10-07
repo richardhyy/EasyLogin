@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="339.0" prefWidth="542.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cc.eumc.easylogin.Controller">
+   <children>
+      <Label fx:id="content" layoutY="117.0" lineSpacing="3.0" prefHeight="31.0" prefWidth="542.0" style="-fx-alignment: center;" text="Content" textAlignment="CENTER" textFill="#979797" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d1d9e6" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect>
+      </Label>
+      <Label fx:id="title" layoutX="-1.0" layoutY="91.0" prefHeight="21.0" prefWidth="542.0" style="-fx-alignment: center;" text="Downloading" textAlignment="CENTER" textFill="#797979" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="91.0">
+         <font>
+            <Font name="Alibaba-PuHuiTi-M" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#d1d9e6" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect>
+      </Label>
+      <Button fx:id="cancelButton" layoutX="411.0" layoutY="172.0" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #A3B1C6; -fx-shape: &quot;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z&quot;;" textFill="#707986">
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ProgressBar fx:id="progressBar" layoutX="131.0" layoutY="172.0" prefHeight="20.0" prefWidth="266.0" progress="0.0">
+         <effect>
+            <DropShadow color="#a5b0c280" height="15.0" offsetX="3.0" offsetY="3.0" radius="7.0" width="15.0">
+               <input>
+                  <DropShadow color="#ffffff80" height="15.0" offsetX="-2.0" offsetY="-2.0" radius="7.0" width="15.0" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ProgressBar>
+      <Label fx:id="urlLabel" alignment="TOP_CENTER" layoutY="201.0" lineSpacing="3.0" prefHeight="37.0" prefWidth="542.0" textAlignment="CENTER" textFill="#aeaeae" wrapText="true">
+         <effect>
+            <DropShadow color="#d1d9e6" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect>
+         <font>
+            <Font name="Alibaba-PuHuiTi-R" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

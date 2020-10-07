@@ -1,0 +1,159 @@
+.root {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.56), 70, 0, 0, 22);
+
+    -fx-background-color: #E0E5EC;
+    -fx-background-insets: 72;
+    -fx-padding: 72;
+    -fx-background-radius: 13;
+}
+
+.dialogueContainer {
+
+}
+
+.button {
+    -fx-background-color: #E0E5EC;
+    -fx-text-fill: #7E8691;
+    -fx-border-radius: 50pt;
+}
+.button:hover {
+
+}
+
+.control-btn-deselected {
+    -fx-background-color: #BEC4C1 !important;
+}
+
+.control-btn-selected {
+    -fx-background-color: #5CC595 !important;
+}
+
+.tab-pane {
+    -fx-tab-max-height: 0;
+}
+
+.tab-pane .tab-header-area {
+    visibility: hidden;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: #E0E5EC;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-border-radius: 1.0em;
+}
+
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 0.0 5.0 0.0;
+
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 5.0 0.0 0.0;
+
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0.05em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0.0 0.05em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: derive(#4D4C4F, 80.0%);
+    -fx-background-insets: 1.0, 0.0, 0.0;
+    -fx-background-radius: 1.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: derive(#4D4C4F, 80.0%);
+    -fx-background-insets: 1.0, 0.0, 0.0;
+    -fx-background-radius: 1.0em;
+}
+
+
+.combo-box .list-cell
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em;
+}
+
+.combo-box-popup .list-view
+{
+    -fx-background-color: #E0E5EC;
+    -fx-effect: dropshadow(three-pass-box, #A3B0C4, 8, 0.0, 0, 0) !important;
+    -fx-background-radius: 8;
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-padding: 4 0 4 5;
+
+    /* No alternate highlighting */
+    -fx-background-color: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+
+.progress-bar {
+    -fx-indeterminate-bar-length: 60;
+    -fx-indeterminate-bar-escape: true;
+    -fx-indeterminate-bar-flip: true;
+    -fx-indeterminate-bar-animation-time: 2;
+}
+.progress-bar > .bar {
+    -fx-background-color: #A3B1C6;
+    -fx-background-insets: 4 4 4 4;
+    -fx-background-radius: 7;
+    -fx-padding: 0.75em;
+}
+.progress-bar:indeterminate > .bar {
+    -fx-background-color: #A3B1C6;
+    -fx-background-radius: 7;
+    -fx-padding: 0.75em;
+}
+.progress-bar > .track {
+    -fx-background-color: #E0E5EC;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1;
+    -fx-background-radius: 9; /* 10, 9, 8 */
+}
